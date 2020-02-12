@@ -1,0 +1,136 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+  {% block head_block %}
+  <link rel="stylesheet" href="{% static 'css/appointment.css' %}">
+  {% endblock %}
+
+  {% block main_block %}
+  <!--::regervation_part start::-->
+  <section class="regervation_part section_padding">
+      <div class="container">
+          <div class="row align-items-center regervation_content">
+              <div class="col-lg-7">
+                  <div class="regervation_part_iner">
+                      <form>
+                          <h2>Make an Appointment</h2>
+                          <div class="form-row">
+                              <div class="form-group col-md-6">
+                                  <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <input type="password" class="form-control" id="inputPassword4"
+                                      placeholder="Email address">
+                              </div>
+                              <div class="form-group col-md-6">
+                                  <select class="form-control" id="Select">
+                                      <option value="1" selected>Select service</option>
+                                      <option value="2">Name of service</option>
+                                      <option value="3">Name of service</option>
+                                      <option value="4">Name of service</option>
+                                      <option value="5">Name of service</option>
+                                  </select>
+                              </div>
+                              <div class="form-group time_icon col-md-6">
+                                  <select class="form-control" id="Select2">
+                                      <option value="" selected>Time</option>
+                                      <option value="1">8 AM TO 10AM</option>
+                                      <option value="1">10 AM TO 12PM</option>
+                                      <option value="1">12PM TO 2PM</option>
+                                      <option value="1">2PM TO 4PM</option>
+                                      <option value="1">4PM TO 6PM</option>
+                                      <option value="1">6PM TO 8PM</option>
+                                      <option value="1">4PM TO 10PM</option>
+                                      <option value="1">10PM TO 12PM</option>
+                                  </select>
+                              </div>
+                              <div class="form-group col-md-12">
+                                  <textarea class="form-control" id="Textarea" rows="4"
+                                      placeholder="Your Note "></textarea>
+                              </div>
+                          </div>
+                          <div class="regerv_btn">
+                              <a href="#" class="btn_2">Make an Appointment</a>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+              <div class="col-lg-5 col-md-6">
+                  <div class="reservation_img">
+                      <img src="{% static 'img/reservation.png' %}" alt="" class="reservation_img_iner">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!--::regervation_part end::-->
+      <!-- <div class="content">
+        <div>
+          <h2>Appointment</h2>
+          <div class="appointment-content">
+            <form method="POST" class=" col-lg-10 col-md-12 col-sm-12">
+              {% csrf_token %}
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="text" name="name" required="required" id="id_fname">
+                    <span for="id_name" class="text">Name</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="email" name="email" required="required" id="id_email">
+                    <span for="id_email" class="text">Email</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="number" name="m_number" required="required" id="id_m_number">
+                    <span class="text" for="id_m_number">Mobile</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox datetime">
+                    <input type="date" name="date" required="required" id="id_date myDate" value="1111-01-01">
+                    <span class="text">Appointment Date</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="inputBox datetime">
+                    <input type="time" name="time" required="required" id="id_time" value="00:00">
+                    <span class="text">Appointment Time</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row100">
+                <div class="col">
+                  <div class="inputBox">
+                    <input type="text" name="addr" required="required" id="id_addr">
+                    <span for="id_addr" class="text">Address</span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row100 button">
+                <div class="col">
+                  <button type="submit">Submit</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="imgBx">
+        <img src="{% static 'images/appointment03.png' %}" alt="">
+      </div> -->
+  {% endblock %}

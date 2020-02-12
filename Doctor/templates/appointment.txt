@@ -1,0 +1,11 @@
+Name: {{ name }}
+
+Email: {{ email }}
+
+Mobile Number: {{ m_number }}
+
+Appoitment on date: {{ day }}
+
+Appoitment At Time: {{ time }}
+
+Address: {{ addr }}

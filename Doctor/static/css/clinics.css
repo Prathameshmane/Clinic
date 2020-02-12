@@ -1,0 +1,41 @@
+.our_depertment .depertment_content {
+    background-color: #fff;
+    padding: 100px 0;
+    margin-top: 0;
+}
+.section_padding {
+    padding: 45px 0px;
+}
+.our_depertment .single_our_depertment {
+    background-color: #0065e1;
+    border: 1px solid #0065e1;
+}
+.our_depertment .single_our_depertment h4, .our_depertment .single_our_depertment p {
+    color: #fff;
+}
+.clinics{
+  position: relative;
+  padding: 10px 32px;
+}
+.clinics ul li{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+}
+.clinics ul li span {
+    display: inline-block;
+    margin-left: 5px;
+}
+/* .our_depertment .single_our_depertment .our_depertment_icon {
+    background-color: #0065e1;
+} */
+@media (max-width: 991px){
+.our_depertment .depertment_content {
+    margin-top: 0;
+    background-color: transparent;
+    padding: 0;
+}
+}

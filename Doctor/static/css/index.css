@@ -1,0 +1,10 @@
+.doctor_part .single_blog_text {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding: 20px 0 0;
+    border: 0px solid transparent !important;
+    background-color: #fff;
+}
+.doctor_part .single_blog_item p.info {
+    line-height: 25px !important;
+}

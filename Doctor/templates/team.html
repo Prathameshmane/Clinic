@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+    {% block head_block %}
+    <link rel="stylesheet" href="{% static "css/team.css" %}">
+    {% endblock %}
+
+    {% block main_block %}
+        <div class="content">
+          <div>
+            <h2>Hello Welcome To ..........'s Clinic</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            <a href="#" title="">Learn More.</a>
+          </div>
+        </div>
+        <div class="imgBx">
+          <img src="{% static "images/cr7.png" %}" alt="">
+        </div>
+        <ul class="sci">
+          <li><a href="#" title="">Facebook</a></li>
+          <li><a href="#" title="">Twitter</a></li>
+          <li><a href="#" title="">Instagram</a></li>
+        </ul>
+    {% endblock %}

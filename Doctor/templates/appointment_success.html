@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+  {% block head_block %}
+  <link rel="stylesheet" href="{% static "css/blog.css" %}">
+  {% endblock %}
+
+  {% block main_block %}
+      <div class="content">
+        <div>
+          <h2>Your Appointment is Successfully Registered.</h2>
+          <div class="blog-content">
+          </div>
+        </div>
+      </div>
+      <ul class="sci">
+        <li><a href="#" title="">Facebook</a></li>
+        <li><a href="#" title="">Twitter</a></li>
+        <li><a href="#" title="">Instagram</a></li>
+      </ul>
+  {% endblock %}
